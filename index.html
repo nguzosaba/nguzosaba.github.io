@@ -12,99 +12,88 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
     <style>
-    body {
-    font-family: "Outfit", century-gothic;
-    }
+        body {
+        font-family: "Outfit", century-gothic;
+        }
     </style>
     <style>
         /* Adjust these classes as needed for your specific design */
-    .bg-blue-500 {
-      background-color: #003366;
-    }
-    
-    .text-white {
-      color: white;
-    }
-    
-    .text-base {
-      font-size: 16px;
-    }
-    
-    .text-xl {
-      font-size: 20px;
-    }
-    
-    .font-bold {
-      font-weight: bold;
-    }
-    
-    .underline {
-      text-decoration: underline;
-    }
+        .bg-blue-500 {
+        background-color: #003366;
+        }
+        
+        .text-white {
+        color: white;
+        }
+        
+        .text-base {
+        font-size: 16px;
+        }
+        
+        .text-xl {
+        font-size: 20px;
+        }
+        
+        .font-bold {
+        font-weight: bold;
+        }
+        
+        .underline {
+        text-decoration: underline;
+        }
 
-</style>
+    </style>
 </head>
 
 <body class="container min-w-full">
 
-    <div class="bg-white h-screen">
-        <!-- navigation -->
-        <nav class="bg-[#003366] text-white px-8 py-4 flex justify-between items-center  mx-auto">
-            <div class="flex items-center">
-                <img class="w-16 cursor-pointer" src="images/logo.png" alt="...">
-                <h1 class="text-2xl px-3">Nguzo Saba Institute</h1>
-            </div>
-            <div
-                class="nav-links duration-500 md:static absolute bg-[#003366] md:min-h-fit h-full left-0 top-[-100%] md:w-auto  w-full flex items-center px-5">
-                <ul class="flex md:flex-row flex-col md:items-center md:gap-[4vw] gap-8">
-                    <li>
-                        <a class="hover:text-gray-500" href="#">Courses</a>
-                    </li>
-                    <li>
-                        <a class="hover:text-gray-500" href="#">School Life</a>
-                    </li>
-                    <li>
-                        <a class="hover:text-gray-500" href="#">Admissions</a>
-                    </li>
-                    <li>
-                        <a class="hover:text-gray-500" href="#">Fees</a>
-                    </li>
-                    <li>
-                        <a class="hover:text-gray-500" href="#">About Us</a>
-                    </li>
-                    <li>
-                        <button class="bg-[#006666] text-white px-5 py-2 rounded-full hover:bg-[#87acec] md:hidden block">Contact Us</button>
-                    </li>
-                </ul>
-            </div>
-            <div class="flex items-center gap-6">
-                <button class="bg-[#006666] text-white px-5 py-2 rounded-full hover:bg-[#87acec] md:block hidden">Contact Us</button>
-                <ion-icon onclick="onToggleMenu(this)" name="menu" class="text-3xl cursor-pointer md:hidden"></ion-icon>
-            </div>
-        </nav>
+    <!-- navigation -->
+    <nav class="bg-[#003366] text-white px-8 py-4 flex justify-between items-center  mx-auto">
+        <div class="flex items-center">
+            <img class="w-16 cursor-pointer" src="images/logo.png" alt="...">
+            <h1 class="text-2xl px-3">Nguzo Saba Institute</h1>
+        </div>
+        <div
+            class="nav-links duration-500 md:static absolute bg-[#003366] md:min-h-fit h-full left-0 top-[-100%] md:w-auto  w-full flex items-center px-5">
+            <ul class="flex md:flex-row flex-col md:items-center md:gap-[4vw] gap-8">
+                <li>
+                    <a class="hover:text-gray-500" href="#">Courses</a>
+                </li>
+                <li>
+                    <a class="hover:text-gray-500" href="#">School Life</a>
+                </li>
+                <li>
+                    <a class="hover:text-gray-500" href="#">Admissions</a>
+                </li>
+                <li>
+                    <a class="hover:text-gray-500" href="#">Fees</a>
+                </li>
+                <li>
+                    <a class="hover:text-gray-500" href="#">About Us</a>
+                </li>
+                <li>
+                    <button class="bg-[#006666] text-white px-5 py-2 rounded-full hover:bg-[#87acec] md:hidden block">Contact Us</button>
+                </li>
+            </ul>
+        </div>
+        <div class="flex items-center gap-6">
+            <button class="bg-[#006666] text-white px-5 py-2 rounded-full hover:bg-[#87acec] md:block hidden">Contact Us</button>
+            <ion-icon onclick="onToggleMenu(this)" name="menu" class="text-3xl cursor-pointer md:hidden"></ion-icon>
+        </div>
+    </nav>
 
-        <!-- hero section -->
-        <!-- <section class="bg-[#003366] bg-center bg-cover">
-            <div class="h-screen flex justify-around items-center">
-                <img src="./images/hero-image.jpg" class="w-1/2 h-1/2 border rounded-e-full border-none ms-10" alt="hero image" />
-                <div class="flex flex-col justify-center items-center text-white w-1/2 h-1/2 mx-10">
-                    <h1 class="text-4xl">Study with Us</h1>
-                    <p class="py-5 px-10 text-2xl font-light">Explore our comprehensive curriculumn that blends academic excellence and with character development and practical life skills. Start your journey today with us and become a part of a global network of progressive minds.</p>
-                    <a href="#" class="border border-white bg-blue-500 px-8 py-3 w-fit">Apply Now</a>
-                </div>
+    <!-- hero section -->
+    <!-- 104px is from the size of navbar -->
+    <section class="bg-[#003366] min-h-[calc(100vh-104px)] flex justify-center md:px-10 px-5">
+        <div class="flex flex-col md:flex-row items-center justify-center">
+            <img src="./images/hero-image.jpg" class="w-full rounded-e-full border-none md:w-1/2" alt="hero image" />
+            <div class="flex flex-col justify-center items-center text-white w-full md:w-1/2 mx-10 mb-10 mt-5">
+                <h1 class="text-4xl">Study with Us</h1>
+                <p class="py-5 px-10 text-xl font-light md:text-2xl">Explore our comprehensive curriculum that blends academic excellence with character development and practical life skills. Start your journey today with us and become a part of a global network of progressive minds.</p>
+                <a href="#" class="border border-white bg-blue-500 px-8 py-3 w-fit">Apply Now</a>
             </div>
-        </section> -->
-        <section class="bg-[#003366] bg-center bg-cover">
-            <div class="flex flex-col md:flex-row min-h-screen items-center justify-center">
-                <img src="./images/hero-image.jpg" class="w-full rounded-e-full border-none md:w-1/2" alt="hero image" />
-                <div class="flex flex-col justify-center items-center text-white w-full md:w-1/2 mx-10 mb-10 mt-5">
-                    <h1 class="text-4xl">Study with Us</h1>
-                    <p class="py-5 px-10 text-xl font-light md:text-2xl">Explore our comprehensive curriculum that blends academic excellence with character development and practical life skills. Start your journey today with us and become a part of a global network of progressive minds.</p>
-                    <a href="#" class="border border-white bg-blue-500 px-8 py-3 w-fit">Apply Now</a>
-                </div>
-            </div>
-        </section>          
-    </div>
+        </div>
+    </section>          
 
     <!-- <main class="min-h-screen bg-white mx-auto flex md:flex-row flex-col justify-center">    
     </main> -->
