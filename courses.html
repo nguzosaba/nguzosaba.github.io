@@ -85,9 +85,18 @@
   <!-- hero section -->
   <!-- 104px is from the size of navbar -->
   <section class="bg-[url('./images/schoollife/NS_Day6-17.jpg')] backdrop-blur-lg bg-cover bg-center min-h-[calc(100vh-104px)] flex justify-center md:px-10 px-5">
-      <div class="flex flex-col md:flex-row items-center justify-center">
-          <h1 class="text-4xl font-bold text-center sm:text-5xl text-white">Courses</h1>
-      </div>
+    <div class="absolute inset-0 bg-black/30 backdrop-blur-sm"></div>
+    <!-- Content -->
+    <div class="relative flex flex-col md:flex-row items-center justify-center">
+        <h1 class="text-4xl font-bold text-center sm:text-5xl text-white">Courses</h1>
+    </div>
+
+    <!-- Arrow pointing down -->
+    <div class="absolute bottom-6 w-full flex justify-center">
+        <svg class="w-8 h-8 text-white animate-bounce" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+        </svg>
+    </div>
   </section>          
 
   <!-- main section -->
